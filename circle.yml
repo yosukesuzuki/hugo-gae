@@ -6,6 +6,8 @@ dependencies:
     - python getlatestsdk.py
     - unzip -q -d $HOME google_appengine.zip
     - go get -v github.com/spf13/hugo
+  override:
+    - $HOME/go_appengine/goapp serve
 test:
   override:
     - hugo -v
