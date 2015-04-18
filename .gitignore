@@ -55,3 +55,14 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# hugo
+themes/*
+public/*
+
+# idea
+.idea/*
+
+# vim
+*.swp
+

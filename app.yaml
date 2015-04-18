@@ -1,0 +1,21 @@
+application: hugo-gae
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: public/index.html
+  upload: /
+- url: /(.*\.html)$
+  static_files: public/\1
+  upload: .*\.html$
+- url: /css
+  static_dir: public/css
+- url: /fonts
+  static_dir: public/fonts
+- url: /js
+  static_dir: public/js
+- url: /img
+  static_dir: public/img
