@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    {{ if .Title == .Site.Title }}
+    {{ if eq .Title .Site.Title }}
     <title>{{ .Site.Title }}</title>
     {{ else }}
     <title>{{ .Title }}:{{ .Site.Title }}</title>
