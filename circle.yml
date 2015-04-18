@@ -1,0 +1,16 @@
+machine:
+  timezone:
+    Asia/Tokyo
+dependencies:
+  pre:
+    - python getlatestsdk.py
+    - unzip -q -d $HOME google_appengine.zip
+    - go get -v github.com/spf13/hugo
+test:
+  override:
+    - hugo -v
+deployment:
+  appengine:
+    branch: master
+    commands:
+      -  $HOME/go_appengine/appcfg.py --oauth2_refresh_token=$APPENGINE_TOKEN update
