@@ -1,0 +1,3 @@
+baseurl = "/"
+languageCode = "en-us"
+title = "GAE/GO with Hugo"
