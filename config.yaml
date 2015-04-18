@@ -1,5 +1,4 @@
 ---
 baseurl: "/"
 languageCode: "en-us"
-uglyurls: true
 title: "My New Hugo Site"
