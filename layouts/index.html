@@ -5,7 +5,11 @@
 
         {{ range .Data.Pages }}
         <div>
-            <h2><a href="{{ if .Params.link }}{{ .Params.link }}{{ else }}{{ .Permalink }}{{ end }}">{{ .Title }}</a></h2>
+            {{ if .Params.link }}
+            <h2><a href="{{ .Params.link }}">{{ .Title }}</a></h2>
+            {{ else }}
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            {{ end }}
             <span class="lead">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
             <p>{{ .Summary }}</p>
         </div>
