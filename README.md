@@ -33,3 +33,7 @@ set Environ variable in Project Settings > Environment Variables
 Name is "APPENGINE_TOKEN"
 Value is value of refresh_token
 ![Project_settings_-_yosukesuzuki_hugo-gae_-_CircleCI.png](https://qiita-image-store.s3.amazonaws.com/0/45686/f294b5b0-3045-58c5-1147-88a0300d4c17.png "Project_settings_-_yosukesuzuki_hugo-gae_-_CircleCI.png")
+
+# do you want to deploy to s3?
+check out this circle.yml
+https://github.com/nathany/hugo-deploy/blob/master/circle.yml
